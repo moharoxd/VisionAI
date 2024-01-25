@@ -241,7 +241,7 @@ window.startSession = () => {
 }
 
 async function greeting() {
-  addToConversationHistory("Hello, my name is Lisa. How can I help you?", "light")
+  addToConversationHistory("Greetings! How may i help you today?", "light")
 
   let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-JennyNeural'>Hello, my name is Lisa. How can I help you?</voice></speak>"
   speechSynthesizer.speakSsmlAsync(spokenText, (result) => {
